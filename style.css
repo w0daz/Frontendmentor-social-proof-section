@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+    font-family: 'League Spartan', sans-serif;
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-position: left top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+
+main {
+    width: 100%;
+}
+
+.cards {
+    width: 360px;
+    margin: 80px auto;
+    display: grid;
+    row-gap: 49px;
+}
+
+.tophalf {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 45px;
+}
+
+.boxOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 22px;
+}
+
+.boxOne > h1 {
+    width: 64%;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.boxOne > p {
+    font-size: 1.18em;
+    font-weight: 400;
+    color: hsl(300, 43%, 22%);
+}
+
+.boxTwo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+button > .rating {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    height: 76px;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    row-gap: 15px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.bottomhalf {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.profilecards {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    padding: 40px 36px 32px 33px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+}
+
+.profilecards > .header > img {
+    width: 42px;
+    border-radius: 50px;
+}
+
+.profilecards > .header {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.profilecards > .header > p {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.profilecards > .header > p > span {
+    color: hsl(333, 80%, 67%);
+}
+
+.profilecards > p {
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    }
+    .cards {
+        min-width: 1009px;
+    }
+
+    .tophalf {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .boxOne {
+        width: 50%;
+        text-align: start;
+        align-items: start;
+        justify-content: ;
+    }
+
+    .boxOne > h1 {
+        font-size: 3.1em;
+    }
+
+    .boxOne > p {
+        width: 90%;
+    }
+
+    .bottomhalf {
+        flex-direction: row;
+        column-gap: 25px;
+    }
+
+    button {
+        height: 48px;
+        width: 399px;
+        flex-direction: row;
+        column-gap: 29px;
+    }
+
+    .cardTwo {
+        transform: translateY(5%);
+    }
+
+    .cardThree {
+        transform: translateY(10%);
+    }
+
+    .buttonTwo {
+        transform: translateX(-10%);
+    }
+
+    .buttonOne {
+        transform: translateX(-20%);
+    }
+
+}
